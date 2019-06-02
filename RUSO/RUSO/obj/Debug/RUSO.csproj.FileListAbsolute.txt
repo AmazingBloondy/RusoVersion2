@@ -73,3 +73,6 @@ C:\Users\gganp\Desktop\ImportadoraRuso\RUSO\RUSO\obj\Debug\RUSO.Marcas.resources
 C:\Users\gganp\Desktop\ImportadoraRuso\RUSO\RUSO\obj\Debug\RUSO.Documentos.resources
 C:\Users\gganp\Desktop\ImportadoraRuso\RUSO\RUSO\obj\Debug\RUSO.FormasPago.resources
 C:\Users\gganp\Desktop\ImportadoraRuso\RUSO\RUSO\obj\Debug\RUSO.Puestos.resources
+C:\Users\Randy\Documents\GitHub\RusoVersion2\RUSO\RUSO\bin\Debug\RUSO.exe.config
+C:\Users\Randy\Documents\GitHub\RusoVersion2\RUSO\RUSO\obj\Debug\RUSO.exe
+C:\Users\Randy\Documents\GitHub\RusoVersion2\RUSO\RUSO\obj\Debug\RUSO.pdb
