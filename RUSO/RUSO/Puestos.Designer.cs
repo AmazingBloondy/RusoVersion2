@@ -282,6 +282,7 @@
             this.txtPuesto.Name = "txtPuesto";
             this.txtPuesto.Size = new System.Drawing.Size(330, 25);
             this.txtPuesto.TabIndex = 26;
+            this.txtPuesto.TextChanged += new System.EventHandler(this.txtPuesto_TextChanged);
             // 
             // tableLayoutPanel8
             // 

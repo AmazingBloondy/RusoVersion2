@@ -282,6 +282,7 @@
             this.txtFP.Name = "txtFP";
             this.txtFP.Size = new System.Drawing.Size(330, 25);
             this.txtFP.TabIndex = 26;
+            this.txtFP.TextChanged += new System.EventHandler(this.txtFP_TextChanged);
             // 
             // tableLayoutPanel8
             // 

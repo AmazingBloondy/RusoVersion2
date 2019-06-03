@@ -13,7 +13,9 @@ namespace RUSO
 {
 	public partial class LogIn : Form
 	{
-		MySqlConnection databaseConnection = new MySqlConnection("datasource = sql3.freemysqlhosting.net; port = 3306; username =sql3292530; password =KLZjP7E8CZ; database =sql3292530");
+		MySqlConnection databaseConnection = new MySqlConnection("datasource = 127.0.0.1; port=3306;username=root;password=;database=importadora;");     
+        //Conexion con BD online
+        // "datasource = sql3.freemysqlhosting.net; port = 3306; username =sql3292530; password =KLZjP7E8CZ; database =sql3292530"
 		int log;
 		public LogIn()
 		{
@@ -86,10 +88,8 @@ namespace RUSO
 			log = 0;
 			string query = "SELECT * FROM `usuarios` WHERE Usuario = MD5('" + usrtxt.Text + "') AND Password = MD5('" + pastxt.Text + "')";
 			MySqlCommand consulta = new MySqlCommand(query, databaseConnection);
-
 			try
 			{
-
 				consulta.ExecuteNonQuery();
 				DataTable respuesta = new DataTable();
 				MySqlDataAdapter datos = new MySqlDataAdapter(consulta);
@@ -102,14 +102,12 @@ namespace RUSO
 					else
 					{ MainMenu menu = new MainMenu(usrtxt.Text, nivel()); menu.Show(); }
 					this.Hide();
-
 					databaseConnection.Close();
-
 				}
 				else
 				{
-					MessageBox.Show("INGRESO INCORRECTO");
-				}
+					MessageBox.Show("Datos Incorrectos, Intente de nuevo! "); 
+                }
 
 			}
 			catch (Exception ex)
@@ -117,7 +115,6 @@ namespace RUSO
 				MessageBox.Show("ERROR" + ex.ToString());
 				databaseConnection.Close();
 			}
-
 		}
 
 		private void LogIn_FormClosed(object sender, FormClosedEventArgs e)

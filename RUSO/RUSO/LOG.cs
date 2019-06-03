@@ -13,7 +13,7 @@ namespace RUSO
 {
 	public partial class LOG : Form
 	{
-		MySqlConnection databaseConnection = new MySqlConnection("datasource = sql3.freemysqlhosting.net; port = 3306; username =sql3292530; password =KLZjP7E8CZ; database =sql3292530");
+		MySqlConnection databaseConnection = new MySqlConnection("datasource = 127.0.0.1; port=3306;username=root;password=;database=importadora;");
 		public LOG(string user, string nivel)
 		{
 			InitializeComponent();

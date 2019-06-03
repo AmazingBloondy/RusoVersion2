@@ -330,6 +330,7 @@
             this.empleado.Name = "empleado";
             this.empleado.Size = new System.Drawing.Size(330, 25);
             this.empleado.TabIndex = 27;
+            this.empleado.SelectedIndexChanged += new System.EventHandler(this.empleado_SelectedIndexChanged);
             // 
             // cliente
             // 
